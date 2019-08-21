@@ -1,0 +1,5 @@
+Задача.
+Создать страницу на 3 языках.Выложить.
+
+https://stackoverflow.com/questions/35433865/bootstrap-4-vertically-align-navigation-links-when-logo-increases-the-navbar-h
+помогло в выравнивании. вертикального menu nav to center

@@ -1,0 +1,234 @@
+div.da{
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Cute Font', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.row{/*to fuul page*/
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-top: 6%;
+}
+
+img.picweb1{
+    width: 200PX;
+    height: auto;
+    
+    
+}
+
+
+
+.img-fluid {
+    max-width: 70%;
+    height: auto;
+  }
+li{
+    text-align: center;
+}
+div.col.ot{
+
+    COLOR: ANTIQUEWHITE;
+    font-size: 300% !important;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Cute Font', cursive;
+}
+
+img.img-responsive{/*first photo*/
+    border-radius: 50%;
+    width:20%;
+    height: auto;
+	margin-right: 2%;
+    margin-top: 1%;
+  
+}
+
+.jumbotron.text-center{/*loho pacegolder*/
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-radius:0px;
+}
+
+   .nav-item.h-100 { /*nav links*/
+    font-size: 149% !important;
+    padding-right: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Cute Font', cursive;
+
+  }
+
+  .li{
+
+    display: table;
+  }
+
+
+  .fb{/*first block font */
+    font-size: 300% !important;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Cute Font', cursive;
+  }
+
+
+
+	
+
+.con1{/*Первый текст*/
+
+    padding-top: 10%;
+  
+
+}
+img.p1.img-fluid{
+    padding-top: 4%;
+    padding-bottom: 15%;
+}
+
+div.bgsec{
+    height: auto;
+    background-color: #212529;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 7%;
+    padding-bottom: 7%;
+}
+
+div.Name{
+    padding-top: 2%;
+    color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+div.Name.Des{
+    color: antiquewhite;
+    font-size: 1rem;
+   
+}
+
+form{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+footer{
+    padding: 2%;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Cute Font', cursive;
+    font-size: 1.5rem;
+}
+
+a img.img-fluid{
+    height: 80%;
+    width: 80%;
+    height: 116px;
+   
+}
+
+@media(min-width: 200px) and (max-width: 544px) { 
+    a img.img-fluid{
+        height: 80%;
+        width: 80%;
+        height: 20px;
+       
+    }
+
+
+    .pic3 img{/*first photo*/
+        border-radius: 50%;
+        width: 30%;
+        margin-right: 2%;
+        margin-top: 1%;
+        
+    }
+
+    img.picweb1{
+        
+        height: auto;
+        width: 50px;
+        padding-top: 12%;
+        
+    }
+    img.LOGO{
+        width: 50%;
+    }
+ }
+div.conteiner form{
+    padding: 20%;
+}
+
+  
+@media (min-width: 544px) and (max-width: 768px) { 
+
+    .pic3 img{/*first photo*/
+        border-radius: 50%;
+        width: 60%;
+        margin-right: 2%;
+        margin-top: 1%;
+        
+    }
+
+    a img.img-fluid{
+        height: 80%;
+        width: 80%;
+        height: 40px;
+       
+    }
+    
+}
+
+// Крупных устройств (настольных компьютеров, 992px и выше)  
+@media (min-width: 992px) { ... 
+    .pic3 img{/*first photo*/
+        border-radius: 50%;
+        width: 80%;
+        margin-right: 2%;
+        margin-top: 1%;
+        
+    }
+
+}
+
+// Очень больших устройств (большие компьютеры, 1200px и выше)  
+@media (min-width: 1200px) { ...
+    .pic3 img{/*first photo*/
+        border-radius: 50%;
+        width: 90%;
+        margin-right: 2%;
+        margin-top: 1%;
+        
+    }
+
+}
+
+   .thumb img {
+            -webkit-filter:  brightness(0.30);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .thumb img:hover {
+            -webkit-filter:  brightness(0.30);
+            filter:  brightness(0.30);
+        }
+
+        .thumb {
+            padding: 5px;
+        }
+
+
+      
+
+        .des{
+            padding-top: 3%;
+        }

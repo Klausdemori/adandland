@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+    <head>
+        <title>Adandland: Заказать логотип, визитку, постер, посадочную страниц</title>
+        <meta name="description" content="Поможем создать запоминающийся дизайн для фирмы! Предлагаем разработку сайта-визитки, логотипа, визитной карточки, постера, контента и услуги копирайтинга.">
+        <meta name="keywords" content="сайт,визитка,лендинг,посадочная,страница,логотип,копирайтинг,рерайтинг,постер">
+        <meta name="author" content="SantaBraga">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if lte IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+         <![endif]--> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" href="img/site_icon.png">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cute+Font&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script>
+                  $(function () {
+
+// init the validator
+// validator files are included in the download package
+// otherwise download from http://1000hz.github.io/bootstrap-validator
+
+$('#contact-form').validator();
+
+
+// when the form is submitted
+$('#contact-form').on('submit', function (e) {
+
+    // if the validator does not prevent form submit
+    if (!e.isDefaultPrevented()) {
+        var url = "contact.php";
+
+        // POST values in the background the the script URL
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $(this).serialize(),
+            success: function (data)
+            {
+                // data = JSON object that contact.php returns
+
+                // we recieve the type of the message: success x danger and apply it to the 
+                var messageAlert = 'alert-' + data.type;
+                var messageText = data.message;
+
+                // let's compose Bootstrap alert box HTML
+                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                
+                // If we have messageAlert and messageText
+                if (messageAlert && messageText) {
+                    // inject the alert to .messages div in our form
+                    $('#contact-form').find('.messages').html(alertBox);
+                    // empty the form
+                    $('#contact-form')[0].reset();
+                }
+            }
+        });
+        return false;
+    }
+})
+});
+        </script>
+
+        
+    
+        
+      </head>
+
+  
+ 
+    <body>
+            <div class="jumbotron text-center">
+                <img src="img/logo.png" class="LOGO" width="25%">
+              
+            </div>
+            
+           
+            <!---->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container justify-content-center">
+                    <!-- Navbar content -->
+             
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse " id="navbar1">
+                  <ul class="navbar-nav mr-auto mx-auto ">
+                      <li class="nav-item h-100 ">
+                          <a class="nav-link" href="#first_block">ABOUT_US</a>
+                        </li>
+                        <li class="nav-item h-100">
+                          <a class="nav-link" href="#second_block">TEAM</a>
+                        </li>
+                        <li class="nav-item h-100">
+                          <a class="nav-link" href="#Third_block">PORTFOLIO</a>
+                        </li>    
+                        <li class="nav-item h-100">
+                          <a class="nav-link" href="#4_block">CONTACT_US</a>
+                        </li>
+                  </ul>
+                
+                </div>
+
+              </div>
+            </nav>
+            <!---->
+            <div class="da" >DIGITAL AGENCY: MAKE YOUR SITE BETTER </div>
+            <div class="container">
+              <div class="row" id="first_block">
+               
+                  <div class="col-md-4 col-sm-12 PL">
+                      <img src="img/portfolio/tabs/we.png"class="p1 img-fluid">
+                  </div>
+                  <div class="col-md-4 col-sm-12" >
+                      <img src="img/portfolio/tabs/ui.png"class="p1 img-fluid"> 
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <img src="img/portfolio/tabs/br.png"class="p1 img-fluid"> 
+                  </div>
+
+
+                </div>
+          </div>
+            <!---->
+            <br>
+            <div class="container">
+              <div class="row" id="first_block">
+                <div class="col"></div>
+                <div class="col fb" >ABOUT_US</div>
+                <div class="col"></div>
+              </div>
+            <!---->
+              <div class="row">
+             
+                <div class="col-md-6 col-sm-12"> <div class="pic3"> <img src="img/santa_braga.png" class="img-fluid " alt="Responsive image" > </div>
+                
+              </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="con1  "> 
+                      
+                        Hi I'm <strong>Paul</strong>!<br>
+                        I'am Web developer and Graphic designer.<br>
+                        My mission is to make the best design for every company in the world.<br>
+                        It is important for me that my work helps the business to find its customers and convey a message.
+                        And we are pleased to provide brand design, web design, application design, and if you want any digital graphics, layout of web pages or search engine optimization.
+                      <!--HTML, CSS, Javascript, SQL, C#, Php + Photoshop, Illustrator + Axure RP, Prototyping, UI and UX.  -->
+                      </div>
+                </div>
+              </div>
+             
+            </div>
+            
+             <!---->
+   
+                   <div class="bgsec" >
+                          <!---->
+                      <br>
+                      <div class="container">
+                        <div class="row" id="second_block">
+                          <div class="col"></div>
+                          <div class="col ot" >OUR_TEAM</div>
+                          <div class="col"></div>
+                        </div>  
+                        <div class="row" >
+                            <div class="col-2"></div>
+                            <div class="col-4" >
+                              <img src="img/akulina.png"class="picweb1 img-fluid we"> 
+                              <div class="Name">Akulina </div>
+                              <div class="Name Des">Social Media and Content Manager</div>
+                              
+                            </div>
+                            <div class="col-4">
+                                <img src="img/Santa_braga_2.png"class="picweb1 img-fluid we"> 
+                                <div class="Name">Paul</div>
+                                <div class="Name Des">Front-End and Digital Designer</div>
+
+                            </div>
+                            <div class="col-2"></div>
+                            <br>
+                          </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!---->
+                   
+              </div>
+                  <!---->
+                  <div class="container">
+                      <div class="row" id="Third_block">
+                        <div class="col"></div>
+                        <div class="col fb" >PORTFOLIO</div>
+                        <div class="col"></div>
+                      </div>
+                        <div class="row h-100" id="Third_block">
+                                    
+                                    <div class="col-2"></div>
+                                    <div class="col-2 thumb">
+
+                                          <a data-fancybox="gallery" href="img/portfolio/logo/PINGVIN.png">
+                                            <img class="img-fluid" src="img/portfolio/logo/PINGVIN.png" alt="">
+                                          </a>
+
+                                    </div>
+
+                                    <div class="col-2 thumb">
+
+                                        <a data-fancybox="gallery" href="img/portfolio/logo/SUKULENDI_POOD.png">
+                                          <img class="img-fluid" src="img/portfolio/logo/SUKULENDI_POOD.png" alt="">
+                                        </a>
+                                      
+                                   </div>
+
+                                  <div class="col-2 thumb">
+
+                                      <a data-fancybox="gallery" href="img\portfolio\logo\LogoFINAL.png">
+                                        <img class="img-fluid" src="img\portfolio\logo\LogoFINAL.png" alt="">
+                                      </a>
+                                    
+                                  </div>
+
+                                <div class="col-2 thumb">
+
+                                    <a data-fancybox="gallery" href="img\portfolio\logo\LogoLNamed.png">
+                                      <img class="img-fluid" src="img\portfolio\logo\LogoLNamed.png" alt="">
+                                    </a>
+                                    
+                                </div>
+
+
+                        </div>
+
+                         
+
+                    <div class="row" id="Third_block">
+                      <div class="col-2"></div>
+                      <div class="col-2 thumb">
+
+                            <a data-fancybox="gallery" href="img/portfolio/logo/LOGO_SERPENRARIY3.png">
+                              <img class="img-fluid" src="img/portfolio/logo/LOGO_SERPENRARIY3.png" alt="">
+                            </a>
+
+                      </div>
+
+                      
+
+                    <div class="col-2 thumb">
+
+                        <a data-fancybox="gallery" href="img/portfolio/placat/aon120319placat.jpg">
+                          <img class="img-fluid" src="img/portfolio/placat/aon120319placat.jpg" alt="">
+                        </a>
+                      
+                    </div>
+
+                    <div class="col-2 thumb">
+
+                      <a data-fancybox="gallery" href="img/portfolio/placat/FLYCICLE3.png">
+                        <img class="img-fluid" src="img/portfolio/placat/FLYCICLE3.png" alt="">
+                      </a>
+                    
+                </div>
+
+                  <div class="col-2 thumb">
+
+                      <a data-fancybox="gallery" href="img/portfolio/vcard/ELRON.jpg">
+                        <img class="img-fluid" src="img/portfolio/vcard/ELRON.jpg" alt="">
+                      </a>
+                     
+                      
+                  </div>
+
+
+              </div>
+
+              <div class="row" id="Third_block">
+                <div class="col-2"></div>
+                <div class="col-2 thumb">
+
+                      <a data-fancybox="gallery" href="img/portfolio/vcard/flower_shop.png">
+                        <img class="img-fluid" src="img/portfolio/vcard/flower_shop.png" alt="">
+                      </a>
+
+                </div>
+
+                
+
+              <div class="col-2 thumb">
+
+                  <a data-fancybox="gallery" href="img/portfolio/vcard/H1.jpg">
+                    <img class="img-fluid" src="img/portfolio/vcard/H1.jpg" alt="">
+                  </a>
+                
+              </div>
+
+              <div class="col-2 thumb">
+
+                <a data-fancybox="gallery" href="img/portfolio/vcard/landoKosmetik2.png">
+                  <img class="img-fluid" src="img/portfolio/vcard/landoKosmetik2.png" alt="">
+                </a>
+              
+          </div>
+
+            <div class="col-2 thumb">
+
+                <a data-fancybox="gallery" href="img/portfolio/vcard/BA.gif">
+                  <img class="img-fluid" src="img/portfolio/vcard/BA.gif" alt="">
+                </a>
+               
+                
+            </div>
+
+
+          </div>
+
+          <div class="row" id="Third_block">
+            <div class="col-2"></div>
+            <div class="col-2 thumb">
+
+                  <a data-fancybox="gallery" href="img/portfolio/vcard/Sasha_Grey.png">
+                    <img class="img-fluid" src="img/portfolio/vcard/Sasha_Grey.png" alt="">
+                  </a>
+
+            </div>
+
+            
+
+          <div class="col-2  thumb">
+
+              <a data-fancybox="gallery" href="img/portfolio/char/smal_monsters.png">
+                <img class="img-fluid" src="img/portfolio/char/smal_monsters.png" alt="">
+              </a>
+            
+          </div>
+
+          <div class="col-2 thumb">
+
+            <a data-fancybox="gallery" href="img/portfolio/char/POP.png">
+              <img class="img-fluid" src="img/portfolio/char/POP.png" alt="">
+            </a>
+          
+      </div>
+
+        <div class="col-2 thumb">
+
+            <a data-fancybox="gallery" href="img/portfolio/char/cloud.png">
+              <img class="img-fluid" src="img/portfolio/char/cloud.png" alt="">
+            </a>
+           
+            
+        </div>
+
+
+      </div>
+
+
+      <div class="row" id="Third_block">
+        <div class="col-2"></div>
+        <div class="col-2 thumb">
+
+              <a data-fancybox="gallery" href="img/portfolio/char/LOSTPB.png">
+                <img class="img-fluid" src="img/portfolio/char/LOSTPB.png" alt="">
+              </a>
+
+        </div>
+
+        
+
+      <div class="col-2 thumb">
+
+          <a data-fancybox="gallery" href="img/portfolio/placat/Без имени-52.jpg">
+            <img class="img-fluid" src="img/portfolio/placat/Без имени-52.jpg" alt="">
+          </a>
+        
+      </div>
+
+      <div class="col-2 thumb">
+
+        <a data-fancybox="gallery" href="img/portfolio/char/icons_1-day.png">
+          <img class="img-fluid" src="img/portfolio/char/icons_1-day.png" alt="">
+        </a>
+      
+  </div>
+
+    <div class="col-2 thumb">
+
+        <a data-fancybox="gallery" href="img/portfolio/char/dragon.png">
+          <img class="img-fluid" src="img/portfolio/char/dragon.png" alt="">
+        </a>
+       
+        
+    </div>
+
+
+  </div>  
+  
+  </div>  
+
+                        <div class="row" id="Third_block">
+                          
+                          <div class="col"><h4></h4></div>
+                          <div class="col"></div>
+                          <div class="col"></div>
+                        </div>
+                        <div class="row" id="Third_block">
+                          <div class="col"><h4</h4></div>
+                          <div class="col"></div>
+                          <div class="col"></div>
+                        </div>
+                        
+                   
+                  </div>
+
+                    
+
+
+                  <!---->
+                  <div class="bgsec" >
+                      <!-- Contact form-->
+                   <br>
+                   
+                     <div class="row" id="4_block">
+                       <div class="col"></div>
+                       <div class="col ot" >CONTAC_US</div>
+                       <div class="col"></div>
+                     </div>
+
+                     <div class="container">
+                      <form action="contact.php" method="POST" role="form">
+                      <br>
+                      <br>
+                      <br>
+                    
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text bg-white">
+                                <i class="fa fa-user"></i>&nbsp
+                              </span>
+                            </div>
+                            <input name="name" type="name" placeholder="Name" class="form-control border-left-0" required>
+                          </div>
+                        </div>
+                    
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text bg-white">
+                                <i class="fa fa-envelope"></i>
+                              </span>
+                            </div>
+                            <input name="email" type="email" placeholder="Email" class="form-control border-left-0" required>
+                          </div>
+                        </div>
+                    
+                        <div class="form-group">
+                          <textarea name="message" class="form-control" id="message" rows="5" placeholder="Enter message" required></textarea>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-paper-plane"></i> 
+                          Send
+                        </button>
+                      </form>
+                    </div>
+                    
+                 </div>
+                 
+                 <footer style="background-color: black"
+               
+                 >
+                 <div style=" COLOR: ANTIQUEWHITE; text-align: center;"> 2019 AdAndLand ©</div> 
+                 </footer>
+                    <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+           
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>    
+                <!-- fancyBox JS -->
+                
+                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+          </body>
+</html>
