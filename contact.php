@@ -29,7 +29,7 @@ $message = $_POST['message'];*/
 $from = 'info@adandland.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'info@adandland.com';
+$sendTo = 'bragapavel16@gmail.com';
 
 // subject of the email
 $subject = 'New message from contact form';
